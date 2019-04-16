@@ -7,5 +7,17 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    draggable: true,
+    dots: '#dots',
+    scrollLock: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+
+  })
+
 })
