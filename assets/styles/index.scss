@@ -1,5 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
 
 i {
   font-size: 2em;
@@ -10,6 +12,14 @@ i {
   }
   .icons {
     margin-left: 14vw;
+  }
+  // glider arrows
+  .glider-next, .glider-prev{
+    right: 5vw;
+    top: 80vh;
+  }
+  .glider-prev{
+    left: 5vw;
   }
 }
 

@@ -4,6 +4,7 @@
 // var example = require('./example');
 
 import 'bootstrap'
+import '@fortawesome/fontawesome-free/js/all'
 
 
 // allows usage of new JS features
