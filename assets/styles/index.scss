@@ -23,3 +23,10 @@ i {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .glider-next, .glider-prev {
+    display: none;
+  }
+}
+
+
