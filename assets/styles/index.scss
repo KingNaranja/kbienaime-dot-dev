@@ -16,7 +16,10 @@ i {
   // glider arrows
   .glider-next, .glider-prev{
     right: 5vw;
-    top: 80vh;
+    top: 85vh;
+    &:focus {
+      outline: none;
+    }
   }
   .glider-prev{
     left: 5vw;
