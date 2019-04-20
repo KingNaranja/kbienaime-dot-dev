@@ -44,6 +44,9 @@ i {
   .footer-links{
     margin: 1em 0 1.5em 1em;
   }
+  .nav {
+    justify-content: center;
+  }
 }
 
 .content {
@@ -61,5 +64,10 @@ footer {
     padding-top: 3em;
     font-size: .5em;
   }
+}
+
+.menu {
+  align-items: center;
+  height: 10vh;
 }
 
