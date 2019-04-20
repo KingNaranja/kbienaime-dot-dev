@@ -21,12 +21,45 @@ i {
   .glider-prev{
     left: 5vw;
   }
+  .social {
+    padding-bottom: 5em;
+  }
+  .footer-links {
+    padding-top: 1em;
+    li{
+      &:hover {
+        color: indianred;
+      }
+    }
+  }
+  footer{
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .glider-next, .glider-prev {
     display: none;
   }
+  .footer-links{
+    margin: 1em 0 1.5em 1em;
+  }
 }
 
+.content {
+  min-height: calc(100vh - 12vh);
+}
+
+footer {
+  height: 12vh;
+  // margin-top: -30px;
+  .social {
+    display: flex;
+    font-size: 2em;
+  }
+  .name{
+    padding-top: 3em;
+    font-size: .5em;
+  }
+}
 
