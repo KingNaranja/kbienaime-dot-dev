@@ -16,7 +16,7 @@ i {
   // glider arrows
   .glider-next, .glider-prev{
     right: 5vw;
-    top: 85vh;
+    top: 255vh;
     &:focus {
       outline: none;
     }
@@ -74,3 +74,11 @@ footer {
   height: 10vh;
 }
 
+.main, .skills, .projects {
+  height: 100vh;
+  widows: 100%;
+}
+.contact {
+  height: 50vh;
+  margin-top: 25vh; 
+}
