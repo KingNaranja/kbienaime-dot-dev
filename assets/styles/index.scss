@@ -35,11 +35,6 @@ i {
   }
   .footer-links {
     padding-top: 1em;
-    li{
-      &:hover {
-        color: indianred;
-      }
-    }
   }
   footer{
     overflow: hidden;
@@ -109,4 +104,11 @@ footer {
   .img-fluid{
     border-radius: 30%;
   }
+}
+.link {
+  &:focus, &:active, &:hover{
+    color:indianred; 
+    text-decoration: none;
+  }
+  color: inherit;
 }
