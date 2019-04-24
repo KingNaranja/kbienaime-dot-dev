@@ -1,0 +1,14 @@
+.rotate {
+  position: absolute;
+  animation: rotation 4s infinite linear;
+  // top: 154%;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
