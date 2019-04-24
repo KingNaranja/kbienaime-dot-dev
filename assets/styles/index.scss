@@ -2,10 +2,11 @@
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
-
+// fontawesome svg
 i {
   font-size: 2em;
 }
+
 @media only screen and (min-width: 768px) {
   .col-3 {
     flex: 0 0 10%;
@@ -38,6 +39,10 @@ i {
   footer{
     overflow: hidden;
   }
+  .home {
+    margin: 8rem;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -81,4 +86,7 @@ footer {
 .contact {
   height: 50vh;
   margin-top: 25vh; 
+}
+.glider-dots {
+  margin: 3rem auto;
 }
