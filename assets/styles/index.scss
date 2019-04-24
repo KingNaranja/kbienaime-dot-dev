@@ -112,3 +112,9 @@ footer {
   }
   color: inherit;
 }
+
+// Fix FOUC 
+html {
+  visibility: visible;
+  opacity: 1;
+}
