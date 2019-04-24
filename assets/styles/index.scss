@@ -1,7 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import './animation.scss';
 
+
+HTML{
+  overflow-x: hidden;
+}
 // fontawesome svg
 i {
   font-size: 2em;
@@ -17,7 +22,7 @@ i {
   // glider arrows
   .glider-next, .glider-prev{
     right: 5vw;
-    top: 255vh;
+    top: 225vh;
     &:focus {
       outline: none;
     }
@@ -40,7 +45,8 @@ i {
     overflow: hidden;
   }
   .home {
-    margin: 8rem;
+    margin: 12rem 2rem 12rem 12rem;
+    text-align: left;
   }
   
 }
@@ -55,10 +61,25 @@ i {
   .nav {
     justify-content: center;
   }
+  .home{
+    text-align: center;
+  }
 }
 
 .content {
   min-height: calc(100vh - 12vh);
+
+  .main, .projects {
+    height: 100vh;
+    width: 100%;
+  }
+  .skills {
+    height: 75vh;
+  }
+  .contact {
+    height: 50vh;
+    margin-top: 25vh; 
+  }
 }
 
 footer {
@@ -79,14 +100,13 @@ footer {
   height: 10vh;
 }
 
-.main, .skills, .projects {
-  height: 100vh;
-  widows: 100%;
-}
-.contact {
-  height: 50vh;
-  margin-top: 25vh; 
-}
 .glider-dots {
   margin: 3rem auto;
+}
+
+.pic {
+  margin: 15% 5%;
+  .img-fluid{
+    border-radius: 30%;
+  }
 }
