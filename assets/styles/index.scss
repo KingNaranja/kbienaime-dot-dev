@@ -4,7 +4,12 @@
 @import './animation.scss';
 
 @import './typography.scss';
+@import './colors.scss';
 
+
+body {
+  overflow-x: hidden;
+}
 @media only screen and (min-width: 768px) {
   .col-3 {
     flex: 0 0 10%;
@@ -16,6 +21,7 @@
   .glider-next, .glider-prev{
     right: 5vw;
     top: 225vh;
+    color: $main;
     &:focus {
       outline: none;
     }
@@ -52,11 +58,16 @@
   .home{
     text-align: center;
   }
+  .icons {
+    
+    margin-left: -10vw;
+    
+  }
 }
 
 .content {
   min-height: calc(100vh - 12vh);
-
+  
   .main, .projects {
     height: 100vh;
     width: 100%;
@@ -64,18 +75,18 @@
   .skills {
     height: 75vh;
   }
-  .contact {
-    height: 50vh;
-    margin-top: 25vh; 
-  }
+}
+.contact {
+  height: 70vh;
 }
 
 footer {
   height: 12vh;
-  // margin-top: -30px;
+  margin-right: 0;
   .social {
     display: flex;
     font-size: 2em;
+    background-color: inherit;
   }
   .name{
     padding-top: 3em;
@@ -86,6 +97,7 @@ footer {
 .menu {
   align-items: center;
   height: 10vh;
+  color: $main;
 }
 
 .glider-dots {
@@ -100,7 +112,7 @@ footer {
 }
 .link {
   &:focus, &:active, &:hover{
-    color:indianred; 
+    color: $darkAccent; 
     text-decoration: none;
   }
   color: inherit;

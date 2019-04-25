@@ -1,0 +1,44 @@
+// colormind palette
+$darkShade: #292932;
+$lightShade:#F0F1EE;
+$main: #968A98;
+$darkAccent: #746963;
+$lightAccent: #7F7383;
+$black: #3c4858;
+
+body{
+  background-color: $lightShade;
+}
+span{
+  color: $lightAccent;
+}
+a{
+  color: $main;
+}
+p {
+  color: $darkShade;
+}
+h1 {
+  color: $black;
+}
+h2, h3 {
+  color: $darkShade;
+}
+.tools {
+  color: $lightAccent;
+}
+
+.contact, .footer  {
+  background-color: $darkShade;
+  p, .link {
+    background-color: $darkShade;
+    color: $lightShade;
+  }
+}
+// light on dark
+.wrapper {
+  width: 100vw;
+  border: none;
+  padding-top: 20vh;
+  background-color: $darkShade;
+}
