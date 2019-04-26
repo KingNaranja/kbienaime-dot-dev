@@ -1,0 +1,125 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import './animation.scss';
+
+@import './typography.scss';
+@import './colors.scss';
+
+
+body {
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .col-3 {
+    flex: 0 0 10%;
+  }
+  .icons {
+    margin-left: 12vw;
+  }
+  // glider arrows
+  .glider-next, .glider-prev{
+    right: 5vw;
+    top: 225vh;
+    color: $main;
+    &:focus {
+      outline: none;
+    }
+  }
+  .glider-prev{
+    left: 5vw;
+  }
+  .social {
+    padding-bottom: 5em;
+  }
+  .footer-links {
+    padding-top: 1em;
+  }
+  footer{
+    overflow: hidden;
+  }
+  .home {
+    margin: 8.1em 2em 8.1em 8.1em;
+    text-align: left;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .glider-next, .glider-prev {
+    display: none;
+  }
+  .footer-links{
+    margin: 1em 0 1.5em 1em;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .home{
+    text-align: center;
+  }
+  .icons {
+    
+    margin-left: -10vw;
+    
+  }
+}
+
+.content {
+  min-height: calc(100vh - 12vh);
+  
+  .main, .projects {
+    height: 100vh;
+    width: 100%;
+  }
+  .skills {
+    height: 75vh;
+  }
+}
+.contact {
+  height: 70vh;
+}
+
+footer {
+  height: 12vh;
+  margin-right: 0;
+  .social {
+    display: flex;
+    font-size: 2em;
+    background-color: inherit;
+  }
+  .name{
+    padding-top: 3em;
+    font-size: .5em;
+  }
+}
+
+.menu {
+  align-items: center;
+  height: 10vh;
+  color: $main;
+}
+
+.glider-dots {
+  margin: 2em auto 5em auto;
+}
+
+.pic {
+  margin: 15% 5%;
+  .img-fluid{
+    border-radius: 30%;
+  }
+}
+.link {
+  &:focus, &:active, &:hover{
+    color: $darkAccent; 
+    text-decoration: none;
+  }
+  color: inherit;
+}
+
+// Fix FOUC 
+html {
+  visibility: visible;
+  opacity: 1;
+}
