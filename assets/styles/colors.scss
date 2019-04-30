@@ -42,6 +42,17 @@ h2, h3 {
   padding-top: 20vh;
   background-color: $darkShade;
 }
+
+.link {
+  color: inherit;
+  transition-duration: 350ms;
+  &:focus, &:active, &:hover{
+    color: $darkAccent; 
+    text-decoration: none;
+  }
+  
+}
+
 .social > a {
   &:hover{
     color: $lightShade;

@@ -110,13 +110,7 @@ footer {
     border-radius: 30%;
   }
 }
-.link {
-  &:focus, &:active, &:hover{
-    color: $darkAccent; 
-    text-decoration: none;
-  }
-  color: inherit;
-}
+
 
 // Remove default firefox scrollbar
 @-moz-document url-prefix() {
