@@ -118,6 +118,11 @@ footer {
   color: inherit;
 }
 
+// Remove default firefox scrollbar
+@-moz-document url-prefix() {
+  .slider {scrollbar-width: none;}
+  
+}
 // Fix FOUC 
 html {
   visibility: visible;
