@@ -19,7 +19,7 @@ p {
   color: $darkShade;
 }
 h1 {
-  color: $black;
+  color: $main *.5;
 }
 h2, h3 {
   color: $darkShade;
@@ -41,4 +41,9 @@ h2, h3 {
   border: none;
   padding-top: 20vh;
   background-color: $darkShade;
+}
+.social > a {
+  &:hover{
+    color: $lightShade;
+  }
 }
