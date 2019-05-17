@@ -2,9 +2,8 @@
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import './animation.scss';
-
-@import './typography.scss';
 @import './colors.scss';
+@import './typography.scss';
 
 
 body {
@@ -114,7 +113,8 @@ footer {
   
 }
 // Fix FOUC 
-html {
+html, h1 {
   visibility: visible;
   opacity: 1;
+  transition: 300ms;
 }
