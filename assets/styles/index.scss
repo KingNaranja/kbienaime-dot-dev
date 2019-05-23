@@ -41,6 +41,8 @@ body {
     margin: 8.1em 2em 8.1em 8.1em;
     text-align: left;
   }
+  .pic{ margin: 10% 5%; }
+  
   
 }
 
@@ -49,7 +51,7 @@ body {
     display: none;
   }
   .footer-links{
-    margin: 1em 0 1.5em 1em;
+    padding: 1em;
   }
   .nav {
     justify-content: center;
@@ -57,7 +59,18 @@ body {
   .home{
     text-align: center;
   }
+  .skills{
+    margin-bottom: 5em;
+  }
   
+}
+@media only screen and (max-height: 568px) {
+  section {
+    height: 100% !important;
+  }
+  .nav{ margin-bottom: -20px;}
+  .content{ padding-top: 1em;}
+  .social { padding-top: .5em;}
 }
 
 .content {
@@ -84,8 +97,9 @@ footer {
     background-color: inherit;
   }
   .name{
-    padding-top: 3em;
+    padding: 3em;
     font-size: .5em;
+    margin-bottom: 0;
   }
 }
 
@@ -100,7 +114,7 @@ footer {
 }
 
 .pic {
-  margin: 15% 5%;
+  text-align: center;
   .img-fluid{
     border-radius: 30%;
   }
